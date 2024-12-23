@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling City & Savio - New Year Offers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --Beiruti-font-family: "Beiruti", serif;
+            --Orbitron-font-family: "Orbitron", serif;
+            --primary-bg: url('back.jpg');
+            --accent-color: #ffe600;
+            --text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+        }
+
+        body {
+            font-family: var(--Orbitron-font-family), sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--primary-bg) no-repeat center center/cover;
+            color: #fff;
+            overflow-x: hidden;
+            transition: background 0.3s ease-in-out;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            animation: pulseGlow 3s infinite;
+        }
+
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+            font-family: var(--Orbitron-font-family);
+            text-shadow: var(--text-shadow);
+            animation: colorShift 6s infinite alternate;
+        }
+
+        header p {
+            font-size: 2em;
+            margin-top: 10px;
+            font-family: var(--Beiruti-font-family);
+            text-shadow: var(--text-shadow);
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .offer {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid var(--accent-color);
+            border-radius: 15px;
+            margin: 20px 0;
+            overflow: hidden;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        }
+
+        .offer:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .offer h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+            text-shadow: var(--text-shadow);
+        }
+
+        .offer p, .offer ul {
+            font-size: 1.4em;
+            line-height: 1.8;
+            color: #fff;
+            font-family: var(--Beiruti-font-family);
+        }
+
+        .offer ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+        }
+
+        .offer ul li {
+            margin: 8px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            font-size: 1em;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(255, 230, 0, 0.8);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(255, 230, 0, 1);
+            }
+        }
+
+        @keyframes colorShift {
+            0% {
+                color: var(--accent-color);
+            }
+            100% {
+                color: #ffffff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 Bowling City & Savio 🎉</h1>
+        <p>احتفل معانا برأس السنة وأقوى العروض!</p>
+    </header>
+    <section>
+        <div class="offer">
+            <h2>🎳 مسابقة البولينج الكبرى</h2>
+            <p>من 24/12 لحد 30/12، سجل اسمك ورقم تليفونك وشارك في مسابقة رأس السنة! أعلى 36 لاعب هيشاركوا في الدورة النهائية يوم 31/12 بجوائز قيمة:</p>
+            <ul>
+                <li>🥇 المركز الأول: 1000 جنيه</li>
+                <li>🥈 المركز الثاني: 500 جنيه</li>
+                <li>🥉 المركز الثالث: 250 جنيه</li>
+            </ul>
+        </div>
+        <div class="offer">
+            <h2>🎮 خصومات الألعاب</h2>
+            <p>لحد يوم 3/1، استمتع بخصم 25% على جميع الألعاب في Bowling City. فرصة رائعة لقضاء وقت ممتع مع الأصدقاء والعائلة!</p>
+        </div>
+        <div class="offer">
+            <h2>🍔 عروض مطعم Savio</h2>
+            <p>احتفل بأحلى وجبة مع عرض خاص: مع كل ساندوتش هتاخد مشروب مجاني! اختَر بين سوفت درينك (كنزات عدا ريدبول) أو مشروب ساخن (شاي، قهوة، أو إسبريسو).</p>
+        </div>
+    </section>
+    <footer>
+        <p>🎉 نتمنى لكم عامًا جديدًا سعيدًا! زورونا في Bowling City & Savio للاحتفال بأجمل الأوقات. <a href="#">للمزيد من المعلومات</a></p>
+    </footer>
+</body>
+</html>
